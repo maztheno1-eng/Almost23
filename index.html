@@ -1,1 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Roblox Dev Tutor</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="topbar">
+    <div class="brand">
+      <div class="title">Way to Success</div>
+      <div class="subtitle">Roblox Dev Tutor</div>
+    </div>
 
+    <div class="top-actions">
+      <button id="ownerBtn" class="btn ghost">Owner</button>
+    </div>
+  </header>
+
+  <div class="banner" id="followBanner" role="button" tabindex="0" aria-label="Follow on Roblox">
+    Follow me: Puppyiscute352
+  </div>
+
+  <main class="wrap">
+    <section class="tier-switch">
+      <button class="btn tier active" data-tier="beginner">Beginner</button>
+      <button class="btn tier" data-tier="intermediate">Intermediate</button>
+      <button class="btn tier" data-tier="master">Master</button>
+    </section>
+
+    <section class="card">
+      <div class="card-title" id="tierTitle">Beginner</div>
+      <div class="card-desc" id="tierDesc">Start here if you’re new to Roblox Studio and Lua.</div>
+    </section>
+
+    <section class="accordion" id="lessonList"></section>
+
+    <section class="footer-note">
+      Premium (coming soon)
+    </section>
+  </main>
+
+  <div class="modal-backdrop hidden" id="modalBackdrop"></div>
+  <div class="modal hidden" id="modal">
+    <div class="modal-title" id="modalTitle">Owner Login</div>
+    <div class="modal-body" id="modalBody"></div>
+    <div class="modal-actions" id="modalActions"></div>
+  </div>
+
+  <script src="app.js"></script>
+</body>
+</html>
